@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh; /*viewport height*/
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(148, 219, 148) , yellow);
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px groove black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    /*opor r duto line holo grid a 18 bhag ache and 1fr kore width*/
+
+}
+#scorebox{
+    position: absolute;
+    top: 25px;
+    left: 1100px;
+    font-size: 35px;
+    font-weight: bold;
+}
+#highscorebox{
+    position: absolute;
+    top: 75px;
+    left: 1100px;
+    font-size: 35px;
+    font-weight: bold;    
+}
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
